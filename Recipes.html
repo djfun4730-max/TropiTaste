@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TropiTaste Recipes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Recipes.css" />
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="Loading Gif.gif" alt="Loading" class="loading-logo" />
+  </div>
+
+  <div id="main-content">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">TropiTaste</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#submit">Submit Recipe</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero-section" id="home">
+      <div class="hero-text">
+        <h1>Welcome to TropiTaste</h1>
+        <p>Discover tropical delights that bring sunshine to your plate 🌺🍍🥥</p>
+      </div>
+    </header>
+
+    <section class="container" id="featured">
+      <h2>Featured Recipes</h2>
+      <ul class="cards">
+        <li>
+          <a href="Pineapple Smoothie.html" class="card">
+            <img src="Pineapple Smoothie.webp" alt="Pineapple Smoothie" />
+            <h3>Pineapple Smoothie</h3>
+            <p>Refreshing blend of pineapple and coconut milk.</p>
+          </a>
+        </li>
+        <li>
+          <a href="Mango Pudding.html" class="card">
+            <img src="Mango Pudding.png" alt="Mango Pudding" />
+            <h3>Mango Pudding</h3>
+            <p>Sweet mango dessert with a creamy tropical twist.</p>
+          </a>
+        </li>
+        <li>
+          <a href="Coconut Bars.html" class="card">
+            <img src="Coconut bars.webp" alt="Coconut Bars" />
+            <h3>Chocolate Coconut Dream Bars</h3>
+            <p>Chewy coconut treats dipped in chocolate drizzle.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container" id="about">
+      <h2>About TropiTaste</h2>
+      <p>At TropiTaste, we believe every meal should feel like a mini vacation. Whether you're craving the sweet zing of pineapple, the creamy comfort of coconut, or the bold spice of island inspired dishes, we've got you covered. Our recipes bring beachy joy and fruity flavor straight to your kitchen no passport required!
+
+From refreshing smoothies and vibrant salads to hearty mains and tropical desserts, we celebrate the colorful, feel good vibes of tropical cuisine. So grab your apron, turn up the island tunes, and let’s make something delicious!
+
+Taste the Tropics. Love the Vibe. Cook with TropiTaste. 🌺🍋
+
+</p>
+    </section>
+
+  
+
+    <section id="submit" class="submit-section">
+  <div class="form-container">
+    <h2>Submit Your Recipe</h2>
+    <p>Got a tropical twist to share? We'd love to try it!</p>
+    <form class="submit-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="recipe-name">Recipe Name</label>
+      <input type="text" id="recipe-name" name="recipe-name" required>
+
+      <label for="ingredients">Ingredients</label>
+      <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+      <label for="steps">Preparation Steps</label>
+      <textarea id="steps" name="steps" rows="6" required></textarea>
+
+      <label for="image">Upload an Image (optional)</label>
+      <input type="file" id="image" name="image" accept="image/*">
+
+      <button type="submit">Submit Recipe</button>
+    </form>
+  </div>
+</section>
+
+<section class="container" id="contact">
+      <h2>Contact Us</h2>
+      <p>Email us at <strong>contact@tropitaste.com</strong> with your tropical food ideas!</p>
+    </section>
+    
+    <footer>
+      <p>&copy; 2025 TropiTaste Recipes 🌴</p>
+    </footer>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loading-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
