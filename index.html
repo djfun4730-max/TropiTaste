@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TropiTaste Recipes – Tropical Food Paradise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Recipes.css" />
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loader-ring"></div>
+      <img src="Loading Gif.gif" alt="Loading" class="loading-logo" />
+      <p class="loading-text">Squeezing the tropics...</p>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo"><span class="logo-icon">🌴</span> TropiTaste</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#featured">Recipes</a></li>
+          <li><a href="#submit">Submit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <img src="hero-image.webp" alt="TropiTaste Hero" class="hero-image" />
+      <div class="hero-text">
+        <span class="hero-badge">Taste the Tropics 🌺</span>
+        <h1>Welcome to <span class="gradient-text">TropiTaste</span></h1>
+        <p>Discover tropical delights that bring sunshine to your plate 🍍🥥</p>
+        <a href="#featured" class="hero-cta">Explore Recipes ↓</a>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-dot"></div>
+      </div>
+    </header>
+
+    <section class="container section" id="featured">
+      <div class="section-header">
+        <span class="section-emoji">🍍</span>
+        <h2>Featured Recipes</h2>
+        <p class="section-sub">Our most-loved tropical creations</p>
+      </div>
+      <ul class="cards">
+        <li>
+          <a href="Pineapple Smoothie.html" class="card">
+            <div class="card-img-wrap">
+              <img src="Pineapple Smoothie.webp" alt="Pineapple Smoothie" loading="lazy" />
+              <span class="card-tag">Quick</span>
+            </div>
+            <div class="card-body">
+              <h3>Pineapple Smoothie</h3>
+              <p>Refreshing blend of pineapple and coconut milk.</p>
+              <span class="card-link">View Recipe →</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="Mango Pudding.html" class="card">
+            <div class="card-img-wrap">
+              <img src="Mango Pudding.png" alt="Mango Pudding" loading="lazy" />
+              <span class="card-tag">Dessert</span>
+            </div>
+            <div class="card-body">
+              <h3>Mango Pudding</h3>
+              <p>Sweet mango dessert with a creamy tropical twist.</p>
+              <span class="card-link">View Recipe →</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="Coconut Bars.html" class="card">
+            <div class="card-img-wrap">
+              <img src="Coconut bars.webp" alt="Coconut Bars" loading="lazy" />
+              <span class="card-tag">Treat</span>
+            </div>
+            <div class="card-body">
+              <h3>Chocolate Coconut Dream Bars</h3>
+              <p>Chewy coconut treats dipped in chocolate drizzle.</p>
+              <span class="card-link">View Recipe →</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="about-bg"></div>
+      <div class="about-content">
+        <span class="section-emoji">🌺</span>
+        <h2>About TropiTaste</h2>
+        <div class="about-text">
+          <p>At TropiTaste, we believe <strong>every meal should feel like a mini vacation</strong>. Whether you're craving the sweet zing of pineapple, the creamy comfort of coconut, or the bold spice of island-inspired dishes — we've got you covered.</p>
+          <p>From refreshing smoothies and vibrant salads to hearty mains and tropical desserts, we celebrate the colorful, feel-good vibes of tropical cuisine. <strong>No passport required.</strong></p>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Recipes</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Tropical</span></div>
+          <div class="stat"><span class="stat-num">☀️</span><span class="stat-label">Sunshine</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="submit-section section" id="submit">
+      <div class="section-header">
+        <span class="section-emoji">📝</span>
+        <h2>Submit Your Recipe</h2>
+        <p class="section-sub">Got a tropical twist to share? We'd love to try it!</p>
+      </div>
+      <div class="form-container">
+        <form class="submit-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Jamie" required />
+            </div>
+            <div class="form-group">
+              <label for="recipe-name">Recipe Name</label>
+              <input type="text" id="recipe-name" name="recipe-name" placeholder="e.g. Coconut Curry" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ingredients">Ingredients</label>
+            <textarea id="ingredients" name="ingredients" rows="4" placeholder="List your ingredients..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="steps">Preparation Steps</label>
+            <textarea id="steps" name="steps" rows="6" placeholder="Describe how to make it..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="image">Upload an Image <span class="optional">(optional)</span></label>
+            <div class="file-input-wrap">
+              <input type="file" id="image" name="image" accept="image/*" />
+              <span class="file-label">Choose a photo</span>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">Submit Recipe ✨</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="section-header">
+        <span class="section-emoji">💌</span>
+        <h2>Contact Us</h2>
+        <p class="section-sub">We'd love to hear from you!</p>
+      </div>
+      <div class="contact-card">
+        <p>Email us at <a href="mailto:contact@tropitaste.com" class="contact-email">contact@tropitaste.com</a> with your tropical food ideas!</p>
+        <div class="social-links">
+          <span class="social-icon">📷</span>
+          <span class="social-icon">🐦</span>
+          <span class="social-icon">📘</span>
+          <span class="social-icon">🎵</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo">🌴 TropiTaste</span>
+          <p>Taste the Tropics. Love the Vibe. 🍋</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#featured">Recipes</a>
+          <a href="#submit">Submit</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TropiTaste Recipes. Made with sunshine ☀️</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Loading screen
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const loading = document.getElementById("loading-screen");
+        const main = document.getElementById("main-content");
+        loading.style.opacity = "0";
+        setTimeout(() => {
+          loading.style.display = "none";
+          main.style.display = "block";
+          document.body.style.overflow = "auto";
+        }, 400);
+      }, 2500);
+    });
+
+    // Mobile nav toggle
+    document.querySelector(".menu-toggle")?.addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("open");
+    });
+
+    // Close nav on link click (mobile)
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.remove("open");
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".section, .card").forEach(el => {
+      observer.observe(el);
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll("section[id], header[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const top = section.offsetTop - 150;
+        if (window.scrollY >= top) current = section.getAttribute("id");
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
+      });
+    });
+  </script>
+</body>
+</html>
